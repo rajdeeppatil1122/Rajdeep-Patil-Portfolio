@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Rajdeep Patil Portfolio</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<style>
+    /* Modal styles */
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Backdrop */
+        z-index: 1050;
+        height: 100%;
+        /* Full height */
+        width: 100%;
+        /* Full width */
+    }
+
+    .custom-modal-size .modal-dialog {
+        width: 100vw;
+        /* Width set to 90% of the viewport width */
+        max-width: 2500px;
+        /* Limit to a maximum width */
+        margin: 0 auto;
+        /* Center horizontally */
+        height: auto;
+        /* Set height automatically based on content */
+    }
+
+    .custom-modal-size .modal-content {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        /* Ensure content takes full width of dialog */
+        height: auto;
+        /* Set height automatically */
+        overflow-y: auto;
+        /* Enable scrolling if content is too long */
+    }
+
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Typewriter animation */
+    .typewriter {
+        font-family: monospace;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        width: 0;
+        animation: blink .75s step-end infinite;
+    }
+
+    @keyframes blink {
+
+        from,
+        to {
+            border-color: transparent;
+        }
+
+        50% {
+            border-color: black;
+        }
+    }
+</style>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+            <h1 class="m-0 display-5"><span class="text-primary">Rajdeep</span> Patil</h1>
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Education & Experience</a>
+                <a href="#service" class="nav-item nav-link">Skills</a>
+                <a href="#portfolio" class="nav-item nav-link">Projects & Achievements</a>
+                <a href="#contact" class="nav-item nav-link">Contact Details</a>
+            </div>
+            <!-- <a href="" class="btn btn-outline-primary d-none d-lg-block">Hire Me</a> -->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Navbar End -->
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always"
+                            allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+    <!-- Header Start -->
+    <div class="container-fluid bg-primary d-flex align-items-center mb-5 py-5" id="home" style="min-height: 100vh;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 px-5 pl-lg-0 pb-5 pb-lg-0">
+                    <img class="img-fluid w-100 rounded-circle shadow-sm" src="img/photo4.png" alt="">
+                </div>
+                <div class="col-lg-7 text-center text-lg-left">
+                    <h3 class="text-white font-weight-normal mb-3">I'm</h3>
+                    <h1 class="display-3 text-uppercase text-primary mb-2" style="-webkit-text-stroke: 2px #ffffff;">
+                        Rajdeep Patil</h1>
+                    <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
+                    <div class="typed-text d-none">Android Developer, Apps Designer, Backend Developer, ML Enthusiast
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
+                        <a href="https://drive.google.com/file/d/120vxu3Y1P75jM_We7Y2VxbBhoy3zCObH/view?usp=sharing"
+                            class="btn btn-outline-light mr-5 custom-btn">Download CV</a>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://www.youtube.com/embed/cPeBvT-IZYU" data-target="#videoModal">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Live: Quotes App</h5>
+                        <button type="button" class="btn-play" data-toggle="modal"
+                            data-src="https://youtube.com/embed/8T9EFG9wJ8M" data-target="#videoModal"
+                            style="margin-left: 40px;">
+                            <span></span>
+                        </button>
+                        <h5 class="font-weight-normal text-white m-0 ml-4 d-none d-sm-block">Live: Birthday App</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5" id="about">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">About</h1>
+                <h1 class="position-absolute text-uppercase text-primary">About Me</h1>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-5 pb-4 pb-lg-0">
+                    <img class="img-fluid rounded w-100" src="img/about.jpg" alt="">
+                </div>
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Android Developer & Backend Developer</h3>
+                    <hr>
+                    <p>I am a passionate Android Developer and Backend Developer with a solid foundation in building
+                        scalable mobile applications and integrating robust backend systems. With a proven track record
+                        of creating seamless Android apps using <strong><u>Java, Kotlin, and XML,</u></strong> I’ve
+                        developed features like <strong><u>Dynamic UIs, API integration, Networking
+                                Libraries</u></strong> and <strong><u>Optimized Performance</u></strong> with extensive
+                        Dubugging and Bug-Fixing. My backend skills in <strong><u>PHP, MySQL, Firebase</u></strong> and
+                        <strong><u>RESTful APIs</u></strong> enable me to build efficient server-side components that
+                        enhance app functionality.<br><br> As a GDSC Android Lead (Google Developer Students Club), I’ve
+                        led projects, learned new technologies like Jetpack Compose and CI/CD, and collaborated with
+                        teams to deliver impactful solutions.<br><br> Besides my Android skills, I have scaled myself in
+                        fields like <strong><u>Python, Machine Learning, NLP, Web Development</strong></u> and other
+                        non-technical skills like Video Editing, Image Editing, Audio Editing, SEO, Content Creation,
+                        Scripting & Storytelling, Critical Thinking, Teamwork, Communication and other Soft-Skills.
+                    </p>
+                    <hr>
+                    <div class="row mb-3">
+                        <div class="col-sm-6 py-2">
+                            <h6><strong>Name:</strong> <span class="text-secondary">Rajdeep Patil</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6><strong>Experience:</strong> <span class="text-secondary">3 Years</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6><strong>Key Skills:</strong> <span class="text-secondary">Android Development, Java,
+                                    JavaScript, Kotlin, XML, PHP, MySQL, Firebase, RESTful APIs, Python, Flask, NLP, C,
+                                    C++, C#, .NET Framework, OverLeaf (Technical Writing) and Computer Networks.</span>
+                            </h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6><strong>Degree:</strong> <span class="text-secondary">B.tech in Computer Engineering
+                                    (Pursuing)</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6><strong>Freelance:</strong> <span class="text-secondary">Available</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6><strong>Phone:</strong> <span class="text-secondary">+91 7843063295</span></h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6><strong>Email:</strong> <span class="text-secondary">rajdeeppatil1210@gmail.com</span>
+                            </h6>
+                        </div>
+                        <div class="col-sm-6 py-2">
+                            <h6><strong>Location:</strong> <span class="text-secondary">Pune, India.</span></h6>
+                        </div>
+                    </div>
+                    <a class="btn btn-outline-primary mr-4"  href="#portfolio">Explore My Work</a>
+                    <!-- <a class="btn btn-outline-primary">Craft Your Solution</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Qualification Start -->
+    <div class="container-fluid py-5" id="qualification">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Education</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Education & Experience</h1>
+            </div>
+            <div class="row d-flex align-items-start">
+                <div class="col-lg-6 h-100">
+                    <h3 class="mb-4">My Education</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">B. Tech in Computer Engineering</h5>
+                            <p class="mb-2"><strong>VIIT Pune</strong> | <small>2023 - 2026</small> | <small>GPA:
+                                    7.4/10</small> </p>
+                            <p>◾ <strong><u>Coursework</u>:</strong> Data Structures & Algorithms, Mobile Application
+                                Development, Operating Systems, Database Management Systems, Object-Oriented Programming
+                                (OOP), Computer Networks & Computer Architecture. <br>
+                                ◾ <strong><u>Projects</u>: </strong><br>
+                            <ol>
+                                <li><strong>Quotes of Wisdom:</strong> A responsive quotes app with over 5,000 dynamic
+                                    quotes, advanced customization, and database management, allowing users to share,
+                                    favorite, and personalize their experience with ease. Published on Amazon App Store.
+                                </li>
+                                <li><strong>The Ultimate Happy Birthday App:</strong> A dynamic birthday app featuring
+                                    Lottie animations, custom UI/UX, and interactive experiences like cake-cutting with
+                                    smooth transitions and Zen Mode for a relaxing experience. Delivered as a freelance
+                                    project.</li>
+                            </ol>
+                            ◾ <strong><u>Activities</u>:</strong> Android Lead for GDSC VIIT, organizing workshops on
+                            Android development and backend integration.
+                            </p>
+
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Diploma in Information Technology</h5>
+                            <p class="mb-2"><strong>Government Polytechnic, Kolhapur</strong> | <small>2020 -
+                                    2023</small> | <small>Percentage: 92.65%</small></p>
+
+                            <p>◾ <strong><u>Coursework</u>:</strong> Java Programming, Web Development, Mobile
+                                Application Development, Computer Hardware & Networking, Database Management.
+                                <br>◾ <strong><u>Projects</u>: </strong><br>
+                            <ol>
+                                <li><strong>Pharmacy App: (Sponsored Project)</strong> Created a dynamic pharmacy app
+                                    for a store, implementing custom RecyclerView, PHP-based APIs, and fragment
+                                    communication for order tracking & purchase history. Additionally, developed a web
+                                    interface for admins to manage inventory, view sales analytics, and process customer
+                                    orders efficiently.</li>
+                                <li><strong>OCR Application:</strong> Developed an app using Google Vision API to
+                                    extract text from images, efficiently managing Bitmap to URI conversions and adding
+                                    animations.</li>
+                                <li><strong>News App:</strong> Built a news-fetching app via Retrofit and BusinessAPI,
+                                    providing an engaging experience with real-time news delivery.</li>
+                            </ol>
+                            ◾ <strong>Graduated with distinction</strong>, demonstrating strong technical & academic
+                            performance.
+                            </p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">SSC (10th Grade)</h5>
+                            <p class="mb-2"> <strong>M.S. Patel English Medium School, Kolhapur</strong> |
+                                <small>2019</small> | <small>Percentage: 93.80%</small>
+                            </p>
+                            <p>◾ <strong><u>Achievements:</u></strong> Secured top grades in core subjects such as
+                                Mathematics, Science, and Computer Science.
+                                <br>
+                                ◾ <strong>
+                                    Demonstrated strong foundational knowledge</strong> in problem-solving and
+                                logic-building, which laid the groundwork for future technical studies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 h-100">
+                    <h3 class="mb-4">My Experience</h3>
+                    <div class="border-left border-primary pt-2 pl-4 ml-2">
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">Android Developer & Programmer</h5>
+                            <p class="mb-2"><strong>Freelance</strong> | <small>2021 - Present</small></p>
+                            <p>◾ <strong><u>Development</u>: </strong>Developed a variety of Android applications using
+                                Java, Kotlin, and XML, focusing on performance optimization and UX design.<br>
+                                ◾ <strong><u>Integration</u>: </strong>Built applications with API integrations, custom
+                                UI components, and efficient background processing, improving user engagement and app
+                                functionality. <br>
+
+                                ◾ <strong><u>Expertise</u>: </strong>Gained expertise in integrating external libraries,
+                                debugging, and publishing apps to the Amazon App Store.</p>
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                                <h5 class="font-weight-bold mb-1">
+                                    Android Developer Intern
+                                    <a href="https://drive.google.com/file/d/1uh4auvIfx9VJnKTPl5r9jyJWqKkuNTLi/view" target="_blank">
+                                        <img src="img/certificate.png" alt="Image Description" style="width: 20px; height: 20px; margin-left: 10px;">
+                                    </a>
+                                </h5>
+                            <p class="mb-2"><strong>iGAP Technologies</strong> | <small>2 Months</small> |
+                                <small>2023</small>
+                            </p>
+                            <p>◾ <strong><u>Contribution</u>: </strong>Contributed to the development of a Farmer’s
+                                Application, focusing on user-friendly interfaces and data-driven functionalities.<br>
+                                ◾ <strong><u>Implementation</u>: </strong>Implemented core features using Retrofit for
+                                API calls, Dagger for dependency injection, and lifecycle-aware components to ensure
+                                smooth app performance.<br>
+                                ◾ <strong><u>Deployment</u>: </strong>Assisted in integrating Continuous
+                                Integration/Continuous Deployment (CI/CD) pipelines for streamlined app deployment,
+                                ensuring seamless updates and maintenance.</p>
+
+                        </div>
+                        <div class="position-relative mb-4">
+                            <i class="far fa-dot-circle text-primary position-absolute"
+                                style="top: 2px; left: -32px;"></i>
+                            <h5 class="font-weight-bold mb-1">YouTube Content Creator</h5>
+                            <p class="mb-2"><strong>Self-employed</strong> | <small>2020 - Present</small></p>
+                            <p>◾ <strong><u>Content Creation</u>: </strong>Produced engaging and educational content
+                                related to Android development and programming languages.<br>
+                                ◾ <strong><u>Growth</u>: </strong>Grew an active subscriber base while enhancing skills
+                                in video editing, audio production, and scriptwriting.<br>
+                                ◾ <strong><u>Topics</u>: </strong>Content related to computer science engineering,
+                                science, physics and geenral facts.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Qualification End -->
+
+
+    <!-- Services Start -->
+    <div class="container-fluid pt-5" id="service">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Skill</h1>
+                <h1 class="position-absolute text-uppercase text-primary">My Skills</h1>
+            </div>
+            <div class="row pb-3">
+                <!-- Service Card -->
+                <!-- Android Development -->
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-laptop service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Android Development</h4>
+                    </div>
+                    <p>With a deep passion for mobile technology, I have honed my skills in Android development...</p>
+                    <a class="border-bottom border-primary text-decoration-none" id="readMoreBtnAndroid">Read More</a>
+                </div>
+
+                <!-- Backend Development -->
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-database service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Backend Development</h4>
+                    </div>
+                    <p>I have extensive experience in backend technologies, including PHP, MySQL, Firebase, and API
+                        development...</p>
+                    <a class="border-bottom border-primary text-decoration-none" id="readMoreBtnBackend">Read More</a>
+                </div>
+
+                <!-- Content Creation -->
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-video service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Content Creation</h4>
+                    </div>
+                    <p>As a YouTube content creator, I have built a channel where I share educational and engaging
+                        content...</p>
+                    <a class="border-bottom border-primary text-decoration-none" id="readMoreBtnContent">Read More</a>
+                </div>
+
+                <!-- Python Development -->
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-code service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Python Development</h4>
+                    </div>
+                    <p>My expertise in Python spans across multiple domains, from developing a personal desktop
+                        assistant...</p>
+                    <a class="border-bottom border-primary text-decoration-none" id="readMoreBtnPython">Read More</a>
+                </div>
+
+                <!-- Java Programming -->
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-coffee service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Java Programming</h4>
+                    </div>
+                    <p>I have developed a strong foundation in Java, working across basic and advanced concepts...</p>
+                    <a class="border-bottom border-primary text-decoration-none" id="readMoreBtnJava">Read More</a>
+                </div>
+
+                <!-- Figma for UI/UX Design -->
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-edit service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">Figma for UI/UX Design</h4>
+                    </div>
+                    <p>I have developed a strong understanding of UI/UX design principles through my use of Figma...</p>
+                    <a class="border-bottom border-primary text-decoration-none" id="readMoreBtnFigma">Read More</a>
+                </div>
+
+                <!-- C/C++/C# Programming -->
+                <div class="col-lg-4 col-md-6 text-center mb-5">
+                    <div class="d-flex align-items-center justify-content-center mb-4">
+                        <i class="fa fa-2x fa-cogs service-icon bg-primary text-white mr-3"></i>
+                        <h4 class="font-weight-bold m-0">C, C++ & C#</h4>
+                    </div>
+                    <p>My command over C, C++, and C# spans across data structures, algorithms, and application
+                        development...</p>
+                    <a class="border-bottom border-primary text-decoration-none" id="readMoreBtnC">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal (Pop-up) -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span id="closeBtn" class="close">&times;</span>
+            <p id="typewriterText"></p>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById('myModal');
+        const typewriterText = document.getElementById('typewriterText');
+        const span = document.getElementById('closeBtn');
+
+        const content = {
+            Android: `With a deep passion for mobile technology, I have honed my skills in Android development through various projects, including responsive applications like the Quotes App, the Pharmacy App, and the Farmer's Application. My expertise lies in utilizing Java, Kotlin, and XML to build feature-rich applications with dynamic UI/UX, smooth animations using Lottie, and efficient background processes through libraries like Retrofit and Dagger. I have worked with different types of apps right from static to networking and have customized many views & viewboxes. As the Android Lead for GDSC VIIT, I have also organized workshops and trained peers, further solidifying my leadership and development skills in the Android ecosystem.`,
+            Backend: `I have extensive experience in backend technologies, including PHP, MySQL, Firebase, and API development. My projects, such as digitalizing a pharmacy system, involved building complex inventory management systems with PHP APIs and MySQL databases, enhancing business operations through data analytics and order tracking. I have utilized Firebase for real-time database management and integrated RESTful APIs in applications, ensuring smooth communication between frontend and backend. My proficiency in PHP-based APIs and databases ensures that I can build secure, scalable, and efficient backend systems, driving seamless functionality across mobile and web platforms.`,
+            Content: `As a YouTube content creator, I have built a channel where I share educational and engaging content on topics ranging from science and technology to computer engineering. Through this platform, I have honed my skills in video editing, scriptwriting, and audio production, using software like Adobe Premiere Pro. My ability to communicate complex technical topics in an understandable manner has helped grow an active community of followers. Additionally, I consistently create visually appealing and informative posts for Instagram, enhancing my digital marketing and design capabilities while staying up-to-date with the latest trends in tech and content creation.`,
+            Python: `My expertise in Python spans across multiple domains, from developing a personal desktop assistant to web scraping and natural language processing (NLP) solutions. I have built various applications that leverage Python's libraries, such as Flask for web development, and implemented advanced functionalities like data extraction and chatbot development using NLP techniques. My health response system project, which integrates DuckDuckGo’s API, demonstrates my ability to use Python for AI-driven solutions. This experience has equipped me with strong skills in automation, machine learning algorithms, and delivering powerful backend services for web and desktop applications.`,
+            Java: `I have developed a strong foundation in Java, working across basic and advanced concepts, including Swing, AWT, events, and POJO classes. My experience includes building robust Android applications and desktop software, leveraging Java’s object-oriented programming features for optimized performance and reusability. Through projects like the Pharmacy App and the Quotes of Wisdom app, I have worked closely with Java components such as RecyclerView, Java sockets, and API networking libraries. This comprehensive exposure to Java programming allows me to efficiently develop scalable solutions, both for Android and general software applications.`,
+            C: `My command over C, C++, and C# spans across data structures, algorithms, and application development. From problem-solving and memory management in C to advanced object-oriented concepts in C++, I have utilized these languages to build efficient, high-performance software. My experience in C# includes developing applications in the .NET framework, focusing on UI/UX design and backend integration. My knowledge of these core languages has been instrumental in creating low-level systems and handling complex computations, ensuring fast, optimized, and secure applications across platforms.`,
+            Figma: `I have developed a strong understanding of UI/UX design principles through my use of Figma to create intuitive and user-friendly app interfaces. From wireframes to high-fidelity prototypes, I have designed layouts that focus on user engagement and accessibility, ensuring seamless navigation across different devices. My projects, including the Ultimate Happy Birthday App and Farmer's Application, feature thoughtful design elements that enhance user experience. My expertise with Figma allows me to collaborate effectively with development team or while developing for myself, bringing user-centered design concepts to life while aligning them with technical requirements.`
+        };
+
+        function startTypewriter(text, i) {
+            if (i < text.length) {
+                typewriterText.innerHTML += text.charAt(i);
+                setTimeout(function () {
+                    startTypewriter(text, i + 1);
+                }, 5);
+            }
+        }
+
+        function openModal(content) {
+            modal.style.display = 'block';
+            typewriterText.innerHTML = '';
+            startTypewriter(content, 0);
+        }
+
+        span.onclick = function () {
+            modal.style.display = 'none';
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = 'none';
+            }
+        }
+
+        document.getElementById('readMoreBtnAndroid').onclick = function () {
+            openModal(content.Android);
+        };
+        document.getElementById('readMoreBtnBackend').onclick = function () {
+            openModal(content.Backend);
+        };
+        document.getElementById('readMoreBtnContent').onclick = function () {
+            openModal(content.Content);
+        };
+        document.getElementById('readMoreBtnPython').onclick = function () {
+            openModal(content.Python);
+        };
+        document.getElementById('readMoreBtnJava').onclick = function () {
+            openModal(content.Java);
+        };
+        document.getElementById('readMoreBtnC').onclick = function () {
+            openModal(content.C);
+        };
+        document.getElementById('readMoreBtnFigma').onclick = function () {
+            openModal(content.Figma);
+        };
+
+        $('#yourModalId').modal({
+            backdrop: 'static', // Optional: prevents closing by clicking outside
+            keyboard: false // Optional: prevents closing with ESC key
+        });
+
+    </script>
+
+
+    <!-- Portfolio Start -->
+    <div class="container-fluid pt-5 pb-3" id="portfolio">
+        <div class="container">
+            <div class="position-relative d-flex align-items-center justify-content-center">
+                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+                <h1 class="position-absolute text-uppercase text-primary">Projects & Achievements</h1>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mb-2">
+                    <ul class="list-inline mb-4" id="portfolio-flters">
+                        <li class="btn btn-sm btn-outline-primary m-1 active" data-filter="*">All</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".first">Android Development</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".second">Other Development</li>
+                        <li class="btn btn-sm btn-outline-primary m-1" data-filter=".third">Achievements, Medals &
+                            Positions</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row portfolio-container">
+                <!-- Portfolio Item 1 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/quotesapk.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <!-- Trigger Modal -->
+                            <a href="#" data-toggle="modal" data-target="#projectModal1">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/birthdayapk.png" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <!-- Trigger Modal -->
+                            <a href="#" data-toggle="modal" data-target="#projectModal2">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 3 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/ocrapkicon.webp" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <!-- Trigger Modal -->
+                            <a href="#" data-toggle="modal" data-target="#projectModal3">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Item 4 -->
+                <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                    <div class="position-relative overflow-hidden mb-2">
+                        <img class="img-fluid rounded w-100" src="img/ic_launcher.webp" alt="">
+                        <div class="portfolio-btn bg-primary d-flex align-items-center justify-content-center">
+                            <!-- Trigger Modal -->
+                            <a href="#" data-toggle="modal" data-target="#projectModal4">
+                                <i class="fa fa-plus text-white" style="font-size: 60px;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- More Portfolio Items -->
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio End -->
+
+    <!-- Modal for Project 1 -->
+    <div class="modal fade custom-modal-size" id="projectModal1" tabindex="-1" role="dialog"
+        aria-labelledby="projectModalLabel" aria-hidden="true" data-backdrop="false">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Quotes Of Wisdom - Published on Amazon AppStore</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <center>
+                        <!-- Project Video (Autoplay) -->
+                        <iframe id="projectVideo1" class="img-fluid mb-4" width="560" style="height: 300px;"
+                            src="https://www.youtube.com/embed/cPeBvT-IZYU?autoplay=1&mute=1" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+
+
+                    </center>
+
+                    <a
+                        href="https://www.amazon.in/AppCraft-Creators-Quotes-of-Wisdom/dp/B0D99WCY3D/ref=sr_1_5?crid=UE2924HX0LDW&dib=eyJ2IjoiMSJ9.CtH8rDcxDpNMI1wECQxUYt_be7QuwSSGLq-YV7VK561IBpcEGUTQbAeVWc5F7xAezF2H3Fo0HuwLyTd4JelmmS6uvNWJJWVtmIecXxgV9yXgVYzjrwXj_Fx6TleJpZr9THuLIQGUxLN6D0CpeCw8wgUDjYKGC-SCQd8XDJmpsutYpTyoPwRBwG7C3FaMJ7uoI7pcxh31BFRTdiKSTBceEnU_gufLueuf73X9rD86JYlDte0IKf-CX_dz-n5D7pDrwdE1aJbJuxT37eVzdI9QQBwI6yI-42FWcqESjuVbh7E.rSqcF9qjdmzJqNiD1SPQTS-T3xqHMWyYgPRoBK7rapg&dib_tag=se&keywords=quotes+of+wisdom&qid=1725350687&s=mobile-apps&sprefix=quotes+of+wisdom%2Cmobile-apps%2C183&sr=1-5">AppStore
+                        Link 1</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://drive.google.com/file/d/1UVHCP2zH8yxRcnVGA6UoPHNxo1u6qJ1T/view">Free Download Link
+                        2</a><br><br>
+
+                    <!-- Project Description -->
+                    <p>🌟 𝗞𝗲𝘆 𝗙𝗲𝗮𝘁𝘂𝗿𝗲𝘀 & 𝗧𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝗠𝗮𝗴𝗶𝗰:<br><br>
+
+                        📖 𝗗𝘆𝗻𝗮𝗺𝗶𝗰 𝗤𝘂𝗼𝘁𝗲 𝗖𝗼𝗻𝘀𝘁𝗿𝘂𝗰𝘁𝗶𝗼𝗻:<br>
+                        With over 5,000 quotes from 50+ authors, handling quotes efficiently was a must! When a new
+                        quote is loaded, all related content, like the text of quote, quote background, screen
+                        background, font style is set in run-time leveraging Constraint Layout's capabilities instead of
+                        static images. This saves app's size and CPU's processing. Quotes are stored dynamically in data
+                        structures, allowing for smooth navigation using next and previous buttons.<br><br>
+
+                        🌐 𝗙𝘂𝗹𝗹𝘆 𝗥𝗲𝘀𝗽𝗼𝗻𝘀𝗶𝘃𝗲 𝗟𝗮𝘆𝗼𝘂𝘁𝘀:<br>
+                        Every element, from icons to backgrounds, dynamically adapts to any screen size.
+                        Programmatically set, the UI scales perfectly with precise mathematical ratios for a seamless
+                        experience.<br><br>
+
+                        💾 𝗗𝗼𝘄𝗻𝗹𝗼𝗮𝗱 & 𝗦𝗵𝗮𝗿𝗲 𝘄𝗶𝘁𝗵 𝗘𝗮𝘀𝗲:<br>
+                        Want to save or share your favorite quote? The app captures the quote as an image, which is then
+                        saved with a unique timestamp. The sharing feature is streamlined, allowing you to spread the
+                        wisdom with just a tap. For downloads, images are inserted into the media gallery, ensuring
+                        they’re always accessible.<br><br>
+
+                        ❤️ 𝗙𝗮𝘃𝗼𝗿𝗶𝘁𝗲𝘀 𝗦𝗲𝗰𝘁𝗶𝗼𝗻:<br>
+                        In the Favorites section, all your liked quotes live happily! The app constructs quotes in
+                        real-time, using dynamic data to save memory and ensure smooth performance. This approach keeps
+                        the app fast and responsive, no matter how many quotes you love.<br><br>
+
+                        🎨 𝗖𝗿𝗲𝗮𝘁𝗶𝘃𝗲 𝗖𝘂𝘀𝘁𝗼𝗺𝗶𝘇𝗮𝘁𝗶𝗼𝗻:<br>
+                        The Setting section is where the real fun begins! Choose your preferred background and font
+                        style, and watch as the entire app transforms. Customizations are saved globally, so your style
+                        stays consistent across every part of the app. Even the toolbar adapts its color to match the
+                        selected background, creating a cohesive and personalized experience.<br><br>
+
+                        📚 𝗖𝗼𝗺𝗽𝗿𝗲𝗵𝗲𝗻𝘀𝗶𝘃𝗲 𝗗𝗮𝘁𝗮𝗯𝗮𝘀𝗲 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁:<br>
+                        A robust database is the backbone of 'Quotes of Wisdom'. It handles everything from saving
+                        quotes and authors to managing user preferences, ensuring the app remains fast and
+                        responsive.<br><br>
+
+                        ✨ 𝗠𝗶𝘀𝗰𝗲𝗹𝗹𝗮𝗻𝗲𝗼𝘂𝘀 𝗠𝗮𝗴𝗶𝗰-<br>
+                        1) Smooth Performance: Threading is utilized to ensure the app runs smoothly, even during
+                        intensive tasks like loading new quotes or saving images.<br>
+                        2) Adaptive Themes: The app dynamically adjusts its theme colors based on the selected
+                        background, ensuring a visually pleasing UI.<br>
+                        3) Engaging Animations: Beautiful animations make the app interactive and engaging, adding a
+                        touch of delight to every interaction.</p>
+
+                    <p><strong>- Screenshots</strong></p>
+                    <!-- Additional Images (optional) -->
+                    <div class="row">
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic1.png" alt="Additional Image 1">
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic2.png" alt="Additional Image 2">
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic3.png" alt="Additional Image 3">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal for Project 2 -->
+    <div class="modal fade custom-modal-size" id="projectModal2" tabindex="-1" role="dialog"
+        aria-labelledby="projectModalLabel" aria-hidden="true" data-backdrop="false">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">The Ultimate Birthday App - Freelance Project</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <center>
+                        <!-- Project Video (Autoplay) -->
+                        <iframe id="projectVideo1" class="img-fluid mb-4" width="560" style="height: 300px;"
+                            src="https://youtube.com/embed/8T9EFG9wJ8M?autoplay=1&mute=1" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+
+
+                    </center>
+
+                    <a
+                        href="https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbXZacGYyTDVmaWJSWkIxSUVRd2RSbWVnaExUd3xBQ3Jtc0ttM3RkalBvV3VTalI3dlVna2g3Z0JJN3FILV9obDE4eS1Uckk2djZ3ckFRYk4tTWJxRURMRzVZcUlHSGFZNTZKMDFYWmozM2tjV0VTTUR0QlhXVHBJbWd0aHI4TzhFMXRyWWJRWXBTUE92QzNXd0VZdw&q=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1zLUVazXbdImqOGNQDCA3lPtn_zJqrw01%2Fview%3Fusp%3Dsharing&v=8T9EFG9wJ8M">Free
+                        Download Link
+                        1</a><br><br>
+
+                    <!-- Project Description -->
+                    <p>𝗧𝗵𝗲 𝗨𝗹𝘁𝗶𝗺𝗮𝘁𝗲 𝗛𝗮𝗽𝗽𝘆 𝗕𝗶𝗿𝘁𝗵𝗱𝗮𝘆 𝗔𝗽𝗽! 🎉<br>
+                        As a passionate Android developer, I’ve poured my heart into crafting an immersive and
+                        interactive experience that makes birthdays even more special. Here’s the detail of what the app
+                        offers:<br><br>
+
+                        🔹 𝗟𝗼𝘁𝘁𝗶𝗲 𝗜𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗶𝗼𝗻 𝗳𝗼𝗿 𝗔𝗱𝘃𝗮𝗻𝗰𝗲𝗱 𝗔𝗻𝗶𝗺𝗮𝘁𝗶𝗼𝗻𝘀: <br>
+                        Implemented Lottie animations for dynamic birthday sequences and effects, with precise event
+                        handling to ensure smooth transitions and fluid UI across devices.
+                        <br><br>
+                        🎶 𝗜𝗻𝘁𝗲𝗿𝗮𝗰𝘁𝗶𝘃𝗲 𝗠𝘂𝘀𝗶𝗰:<br>Utilized Android's MediaPlayer and SoundPool APIs for
+                        context-aware audio, ensuring seamless playback with event-driven checks to prevent overlapping
+                        sounds. Implemented state management with SharedPreferences to resume music from precise
+                        timestamps after Zen Mode.
+                        <br><br>
+                        💫 𝗖𝘂𝘀𝘁𝗼𝗺 𝗨𝗜/𝗨𝗫:<br>Designed a responsive UI with transforming frames using
+                        ValueAnimator and AnimatorSet for smooth, complex transitions. Integrated gradient and
+                        live-changing backgrounds, maintaining a consistent user experience without frame drops.<br><br>
+
+                        🔄 𝗡𝗮𝘃𝗶𝗴𝗮𝘁𝗼𝗿 𝗔𝗰𝘁𝗶𝘃𝗶𝘁𝘆 𝘄𝗶𝘁𝗵 𝗠𝘂𝗹𝘁𝗶-𝗔𝗰𝘁𝗶𝘃𝗶𝘁𝘆
+                        𝗧𝗿𝗮𝗻𝘀𝗶𝘁𝗶𝗼𝗻𝘀:<br>
+                        Designed a navigator activity for seamless transitions between features, using
+                        FragmentTransaction and ActivityOptionsCompat for smooth animations, with ViewModel and LiveData
+                        for state management.<br><br>
+
+                        🎂 𝗕𝗶𝗿𝘁𝗵𝗱𝗮𝘆 𝗖𝗮𝗸𝗲 𝗭𝗼𝗻𝗲 – 𝗠𝘂𝗹𝘁𝗶-𝗘𝘃𝗲𝗻𝘁 𝗛𝗮𝗻𝗱𝗹𝗶𝗻𝗴:<br>
+                        Engineered a responsive cake-cutting experience using custom touch listeners that detect finger
+                        slides to trigger knife animations. I ensured smooth, non-interruptible animations by disabling
+                        input listeners during animation sequences and using Handler for delayed event
+                        reactivation.<br><br>
+
+                        🌿 𝗭𝗲𝗻 𝗠𝗼𝗱𝗲 𝗜𝗺𝗽𝗹𝗲𝗺𝗲𝗻𝘁𝗮𝘁𝗶𝗼𝗻:<br>Integrated Zen Mode with AnimatorSet for
+                        smooth background transitions and MediaPlayer with a custom focus listener to pause audio
+                        streams. Designed for a relaxed environment, disabling all interactions, and efficiently
+                        resuming the app's previous state using lifecycle-aware components.<br><br>
+
+                        🧠 𝗧𝗿𝗶𝘃𝗶𝗮 𝗖𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲:<br>
+                        Developed a trivia challenge module with dynamically loaded questions and real-time score
+                        tracking. Implemented RecyclerView for question display and a custom adapter to manage user
+                        responses, ensuring accuracy and responsiveness during the challenge.<br><br>
+
+                        📖 𝗠𝗲𝗺𝗼𝗿𝘆 𝗕𝗼𝗼𝗸 (𝗕𝗼𝗼𝗸𝗙𝗹𝗶𝗽𝗣𝗮𝗴𝗲𝗧𝗿𝗮𝗻𝘀𝗳𝗼𝗿𝗺𝗲𝗿𝟮):<br>
+                        Integrated the BookFlipPageTransformer2 by Dongkeun Lee (@dkmeteor) to create a realistic
+                        page-flipping memory book using ViewPager and PageTransformer, ensuring both high performance
+                        and visual fidelity.<br><br>
+
+                        𝙏𝙚𝙘𝙝𝙎𝙩𝙖𝙘𝙠:<br>Java, XML, and a host of external dependencies.<br><br>
+
+                        Feel free to check out the demo in the video, and I’d love to hear your feedback! 🚀
+                    </p>
+
+                    <p><strong>- Screenshots</strong></p>
+                    <!-- Additional Images (optional) -->
+                    <div class="row">
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic6.jpg" alt="Additional Image 1">
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic5.jpg" alt="Additional Image 2">
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic4.jpg" alt="Additional Image 3">
+                            <br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal for Project 3 -->
+    <div class="modal fade custom-modal-size" id="projectModal3" tabindex="-1" role="dialog"
+        aria-labelledby="projectModalLabel" aria-hidden="true" data-backdrop="false">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">Optical Character Recognition (OCR) App - Image To
+                        Text Extraction</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <center>
+                        <!-- Project Video (Autoplay) -->
+                        <!-- Project GIF (Local) -->
+                        <!-- Project GIF (Autoplay and Loop) -->
+                        <img id="projectGIF1" class="img-fluid mb-4" width="560" style="height: 300px;"
+                            src="img/ocrGIF.gif" alt="Project GIF">
+
+                    </center>
+
+                    <a href="https://drive.google.com/file/d/1xbughWimCU6PgOU0Vn5d0x-UT54Vo2xs/view?usp=sharing">Free
+                        Download Link
+                        1</a><br><br>
+
+                    <!-- Project Description -->
+                    <p>📄 𝗢𝗖𝗥 𝗔𝗽𝗽 – 𝗧𝗲𝘅𝘁 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗶𝗼𝗻 𝗳𝗿𝗼𝗺 𝗜𝗺𝗮𝗴𝗲𝘀 -
+                        The OCR App employs Google’s Mobile Vision API to deliver a seamless text extraction experience.
+                        I focused on integrating the TextRecognizer class to scan, detect, and process text from images,
+                        providing a smooth user workflow from image selection to text output.<br><br>
+
+                        🔍 𝗚𝗼𝗼𝗴𝗹𝗲 𝗠𝗼𝗯𝗶𝗹𝗲 𝗩𝗶𝘀𝗶𝗼𝗻 𝗔𝗣𝗜 𝗳𝗼𝗿 𝗧𝗲𝘅𝘁 𝗥𝗲𝗰𝗼𝗴𝗻𝗶𝘁𝗶𝗼𝗻:
+                        <br>Using the TextRecognizer’s detect method, the app extracts text from selected images,
+                        displaying results with precision. This process enhanced my understanding of working with
+                        real-time image data and efficiently managing memory during the recognition process.<br><br>
+
+                        ✂️ 𝗘𝗱𝗶𝘁𝗶𝗻𝗴 & 𝗦𝗵𝗮𝗿𝗶𝗻𝗴:<br>Users can edit the extracted text within the app,
+                        enabling easy corrections. I incorporated clipboard functionality to allow users to copy and
+                        share the text, offering flexibility in how they manage their data.<br><br>
+
+                        📷 𝗖𝗮𝗺𝗲𝗿𝗮 𝗮𝗻𝗱 𝗚𝗮𝗹𝗹𝗲𝗿𝘆 𝗜𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗶𝗼𝗻:<br>The app features both camera
+                        capture and gallery selection for image input. I learned to handle bitmap-to-URI and
+                        URI-to-bitmap conversions, which ensured smooth transitions between image input and text
+                        recognition.<br><br>
+
+                        🎨 𝗨𝗜/𝗨𝗫 𝗔𝗻𝗶𝗺𝗮𝘁𝗶𝗼𝗻𝘀:<br>I added engaging button animations for feedback, improving
+                        the overall experience. The app also efficiently handles image processing, providing a fast,
+                        user-friendly way to extract text.
+                    </p>
+
+                    <p><strong>- Screenshots</strong></p>
+                    <!-- Additional Images (optional) -->
+                    <div class="row">
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic8.jpg" alt="Additional Image 2">
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic10.jpg" alt="Additional Image 3">
+                            <br>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic9.jpg" alt="Additional Image 3">
+                            <br>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic7.jpg" alt="Additional Image 1">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Modal for Project 3 -->
+    <div class="modal fade custom-modal-size" id="projectModal4" tabindex="-1" role="dialog"
+        aria-labelledby="projectModalLabel" aria-hidden="true" data-backdrop="false">
+
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalLabel">News App - Seamless API-Based News Experience</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+
+                </div>
+                <div class="modal-body">
+                    <center>
+                        <!-- Project Video (Autoplay) -->
+                        <!-- Project GIF (Local) -->
+                        <!-- Project GIF (Autoplay and Loop) -->
+                        <img id="projectGIF1" class="img-fluid mb-4" width="560" style="height: 300px;" src=""
+                            alt="Project GIF">
+
+                    </center>
+
+                    <!-- <a
+                        href="https://drive.google.com/file/d/1xbughWimCU6PgOU0Vn5d0x-UT54Vo2xs/view?usp=sharing">Free
+                        Download Link
+                        1</a><br><br> -->
+
+                    <!-- Project Description -->
+                    <p>📰 𝗡𝗲𝘄𝘀 𝗔𝗽𝗽 – 𝗦𝗲𝗮𝗺𝗹𝗲𝘀𝘀 𝗔𝗣𝗜-𝗕𝗮𝘀𝗲𝗱 𝗡𝗲𝘄𝘀 𝗘𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲 - The News
+                        App utilizes the power of Retrofit, a robust networking library, to fetch real-time
+                        data from news APIs. The app acts as a bridge between the Android device and the news API,
+                        pulling in queries like country, category, and page size, ensuring relevant news feeds for
+                        users. I’ve learned to manage HTTP requests, set up asynchronous network calls, and handle
+                        responses in real-time using Retrofit’s adaptable interface.<br><br>
+
+                        📡 𝗥𝗲𝘁𝗿𝗼𝗳𝗶𝘁 & 𝗔𝗣𝗜 𝗜𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗶𝗼𝗻:<br>The app's API key allows for secure
+                        communication between the app and the NewsAPI platform. By creating Retrofit objects and
+                        utilizing custom interfaces, I implemented category-specific queries, ensuring each fragment
+                        dynamically loads the right data.<br><br>
+
+                        🗂️ 𝗙𝗿𝗮𝗴𝗺𝗲𝗻𝘁-𝗕𝗮𝘀𝗲𝗱 𝗨𝗜:<br>To create a user-friendly experience, the app features
+                        a
+                        Fragment-based architecture that categorizes news feeds into tabs. Each fragment pulls data
+                        specific to a category, such as science or technology, from the API, ensuring smooth navigation
+                        and content management.<br><br>
+
+                        📱 𝗥𝗲𝗰𝘆𝗰𝗹𝗲𝗿𝗩𝗶𝗲𝘄 𝗳𝗼𝗿 𝗘𝗳𝗳𝗶𝗰𝗶𝗲𝗻𝘁 𝗗𝗶𝘀𝗽𝗹𝗮𝘆:<br>I implemented
+                        RecyclerView
+                        to handle large data sets efficiently, displaying each news article with optimal scrolling
+                        performance. The adapter is customized to load images, headlines, and summaries, providing a
+                        seamless user experience.<br><br>
+
+                        🌐 𝗪𝗲𝗯𝗩𝗶𝗲𝘄 𝗜𝗻𝘁𝗲𝗴𝗿𝗮𝘁𝗶𝗼𝗻:<br>The app enables users to view full articles without
+                        leaving the app, thanks to WebView integration. This allows for a quick and smooth transition
+                        from headlines to the full news content, enhancing in-app engagement.<br><br>
+
+                        🎨 𝗦𝗽𝗹𝗮𝘀𝗵 𝗦𝗰𝗿𝗲𝗲𝗻 𝘄𝗶𝘁𝗵 𝗟𝗼𝘁𝘁𝗶𝗲:<br>To provide an engaging user entry point,
+                        I
+                        developed a splash screen using Lottie animations, alongside a multi-threaded splash screen
+                        handler. This ensures the UI remains responsive while the app prepares its content.
+                    </p>
+
+                    <p><strong>- Screenshots (Website in progress...)</strong></p>
+                    <!-- Additional Images (optional) -->
+                    <!-- <div class="row">
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic8.jpg" alt="Additional Image 2">
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic10.jpg" alt="Additional Image 3">
+                            <br>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic9.jpg" alt="Additional Image 3">
+                            <br>
+                        </div>
+                        <div class="col-lg-4 mb-2">
+                            <img class="img-fluid" src="img/pic7.jpg" alt="Additional Image 1">
+                        </div>
+
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <script>
+        var player;
+
+        // Load YouTube iframe API
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('projectVideo1', {
+                videoId: 'cPeBvT-IZYU',
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        // Autoplay the video when the player is ready
+        function onPlayerReady(event) {
+            event.target.playVideo(); // Autoplay if desired
+        }
+
+        $(document).ready(function () {
+            // Check if the modal close event is firing
+            $('#projectModal1').on('hide.bs.modal', function () {
+                console.log('Modal is closing'); // Check if this message appears in the console
+
+                if (player) {
+                    player.mute(); // Mute the video when the modal closes
+                    console.log('Video is muted'); // Debug message for muting
+                }
+            });
+        });
+    </script>
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5" id="contact">
+        <div class="container text-center py-5">
+            <strong style="font-size: 30px;">Contact Details</strong><br><br>
+
+            <div class="d-flex justify-content-center mb-4">
+                <!-- <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a> -->
+                <a class="btn btn-light btn-social mr-2" target="_blank" tooltip="View My LinkedIn"
+                    href="https://www.linkedin.com/in/rajdeeppatil/"><i class="fab fa-linkedin-in"></i></a>
+                <a class="btn btn-light btn-social mr-2" target="_blank" tooltip="View My Instagram"
+                    href="https://www.instagram.com/rajdeepzpatil/"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social" tooltip="View My Portfolio" href="https://your-portfolio-url.com"
+                    target="_blank">
+                    <i class="fas fa-user"></i>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-outline-dark px-0 back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
